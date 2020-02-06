@@ -1,90 +1,197 @@
 /*
 *    main.js
 *    Mastering Data Visualization with D3.js
-*    3.11 - Making a bar chart
+*    Project 3 - CoinStats
 */
 
-var margin = { left:100, right:10, top:10, bottom:150 };
+var margin = { left:80, right:100, top:50, bottom:100 },
+    height = 500 - margin.top - margin.bottom, 
+    width = 800 - margin.left - margin.right;
 
-var width = 800 - margin.left - margin.right,
-    height = 1200 - margin.top - margin.bottom;
-
-var g = d3.select("#chart-area")
+var svg = d3.select("#chart-area")
     .append("svg")
-        .attr("width", width + margin.left + margin.right)
-        .attr("height", height + margin.top + margin.bottom)
-    .append("g")
-        .attr("transform", "translate(" + margin.left 
-            + ", " + margin.top + ")");
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+var g = svg.append("g")
+        .attr("transform", "translate(" + margin.left + 
+            ", " + margin.top + ")");
 
-// X Label
-g.append("text")
-    .attr("class", "x axis-label")
+var t = function(){ return d3.transition().duration(1000); }
+
+var parseTime = d3.timeParse("%Y");
+var formatTime = d3.timeFormat("%Y");
+var bisectDate = d3.bisector(function(d) { return d.date; }).left;
+
+// Add the line for the first time
+g.append("path")
+    .attr("class", "line")
+    .attr("fill", "none")
+    .attr("stroke", "grey")
+    .attr("stroke-width", "3px");
+
+// Labels
+var xLabel = g.append("text")
+    .attr("class", "x axisLabel")
+    .attr("y", height + 50)
     .attr("x", width / 2)
-    .attr("y", height + 140)
     .attr("font-size", "20px")
     .attr("text-anchor", "middle")
-    .text("Bundesland");
-
-// Y Label
-g.append("text")
-    .attr("class", "y axis-label")
-    .attr("x", - (height / 2))
-    .attr("y", -60)
-    .attr("font-size", "20px")
-    .attr("text-anchor", "middle")
+    .text("Year");
+var yLabel = g.append("text")
+    .attr("class", "y axisLabel")
     .attr("transform", "rotate(-90)")
-    .text("#Patents");
+    .attr("y", -60)
+    .attr("x", -170)
+    .attr("font-size", "20px")
+    .attr("text-anchor", "middle")
+    .text("#Patents")
 
-d3.csv("data/PatentData.csv").then(function(data){
-    console.log(data);
+// Scales
+var x = d3.scaleTime().range([0, width]);
+var y = d3.scaleLinear().range([height, 0]);
 
-    data.forEach(function(d){
-        d.patents = +d.patents;
-        console.log(d.patents);
+// X-axis
+var xAxisCall = d3.axisBottom()
+    .ticks(4);
+var xAxis = g.append("g")
+    .attr("class", "x axis")
+    .attr("transform", "translate(0," + height +")");
+
+// Y-axis
+var yAxisCall = d3.axisLeft()
+var yAxis = g.append("g")
+    .attr("class", "y axis");
+
+// Event listeners
+$("#coin-select").on("change", update)
+$("#var-select").on("change", update)
+
+// Add jQuery UI slider
+$("#date-slider").slider({
+    range: true,
+    max: parseTime("2018").getTime(),
+    min: parseTime("2000").getTime(),
+    step: 86400000, // One day
+    values: [parseTime("2000").getTime(), parseTime("2018").getTime()],
+    slide: function(event, ui){
+        $("#dateLabel1").text(formatTime(new Date(ui.values[0])));
+        $("#dateLabel2").text(formatTime(new Date(ui.values[1])));
+        update();
+    }
+});
+
+d3.json("data/patentdata_strings.json").then(function(data){
+    // console.log(data);
+
+    // Prepare and clean data
+    filteredData = {};
+    for (var coin in data) {
+        if (!data.hasOwnProperty(coin)) {
+            continue;
+        }
+        filteredData[coin] = data[coin].filter(function(d){
+            return !(d["patents"] == null)
+        })
+        filteredData[coin].forEach(function(d){
+            d["patents"] = +d["patents"];
+            //d["24h_vol"] = +d["24h_vol"];
+            //d["market_cap"] = +d["market_cap"];
+            d["date"] = parseTime(d["date"])
+        });
+    }
+
+    // Run the visualization for the first time
+    update();
+})
+
+function update() {
+    // Filter data based on selections
+    var coin = $("#coin-select").val(),
+        yValue = $("#var-select").val(),
+        sliderValues = $("#date-slider").slider("values");
+    var dataTimeFiltered = filteredData[coin].filter(function(d){
+        return ((d.date >= sliderValues[0]) && (d.date <= sliderValues[1]))
     });
 
-    var x = d3.scaleBand()
-        .domain(data.map(function(d){ return d.bundesland; }))
-        .range([0, width])
-        .paddingInner(0.3)
-        .paddingOuter(0.3);
+    // Update scales
+    x.domain(d3.extent(dataTimeFiltered, function(d){ return d.date; }));
+    y.domain([d3.min(dataTimeFiltered, function(d){ return d[yValue]; }) / 1.005, 
+        d3.max(dataTimeFiltered, function(d){ return d[yValue]; }) * 1.005]);
 
-    var y = d3.scaleLinear()
-        .domain([0, d3.max(data, function(d){
-            return d.patents;
-        })])
-        .range([height, 0]);
+    // Fix for format values
+    var formatSi = d3.format(".2s");
+    function formatAbbreviation(x) {
+      var s = formatSi(x);
+      switch (s[s.length - 1]) {
+        case "G": return s.slice(0, -1) + "B";
+        case "k": return s.slice(0, -1) + "K";
+      }
+      return s;
+    }
 
-    var xAxisCall = d3.axisBottom(x);
-    g.append("g")
-        .attr("class", "x axis")
-        .attr("transform", "translate(0, " + height + ")")
-        .call(xAxisCall)
-        .selectAll("text")
-            .attr("y", "10")
-            .attr("x", "-5")
-            .attr("text-anchor", "end")
-            .attr("transform", "rotate(-40)");
+    // Update axes
+    xAxisCall.scale(x);
+    xAxis.transition(t()).call(xAxisCall);
+    yAxisCall.scale(y);
+    yAxis.transition(t()).call(yAxisCall.tickFormat(formatAbbreviation));
 
-    var yAxisCall = d3.axisLeft(y)
-        .ticks(3)
-        .tickFormat(function(d){
-            return d;
-        });
-    g.append("g")
-        .attr("class", "y-axis")
-        .call(yAxisCall);
+    // Clear old tooltips
+    d3.select(".focus").remove();
+    d3.select(".overlay").remove();
 
-    var rects = g.selectAll("rect")
-        .data(data)
-    
-    rects.enter()
-        .append("rect")
-            .attr("y", function(d){ return y(d.patents); })
-            .attr("x", function(d){ return x(d.bundesland); })
-            .attr("width", x.bandwidth)
-            .attr("height", function(d){ return height - y(d.patents); })
-            .attr("fill", "orange");
+    // Tooltip code
+    var focus = g.append("g")
+        .attr("class", "focus")
+        .style("display", "none");
+    focus.append("line")
+        .attr("class", "x-hover-line hover-line")
+        .attr("y1", 0)
+        .attr("y2", height);
+    focus.append("line")
+        .attr("class", "y-hover-line hover-line")
+        .attr("x1", 0)
+        .attr("x2", width);
+    focus.append("circle")
+        .attr("r", 5);
+    focus.append("text")
+        .attr("x", 15)
+        .attr("dy", ".31em");
+    svg.append("rect")
+        .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
+        .attr("class", "overlay")
+        .attr("width", width)
+        .attr("height", height)
+        .on("mouseover", function() { focus.style("display", null); })
+        .on("mouseout", function() { focus.style("display", "none"); })
+        .on("mousemove", mousemove);
+        
+    function mousemove() {
+        var x0 = x.invert(d3.mouse(this)[0]),
+            i = bisectDate(dataTimeFiltered, x0, 1),
+            d0 = dataTimeFiltered[i - 1],
+            d1 = dataTimeFiltered[i],
+            d = (d1 && d0) ? (x0 - d0.date > d1.date - x0 ? d1 : d0) : 0;
+        focus.attr("transform", "translate(" + x(d.date) + "," + y(d[yValue]) + ")");
+        focus.select("text").text(function() { return d3.format("$,")(d[yValue].toFixed(2)); });
+        focus.select(".x-hover-line").attr("y2", height - y(d[yValue]));
+        focus.select(".y-hover-line").attr("x2", -x(d.date));
+    }
 
-})
+    // Path generator
+    line = d3.line()
+        .x(function(d){ return x(d.date); })
+        .y(function(d){ return y(d[yValue]); });
+
+    // Update our line path
+    g.select(".line")
+        .transition(t)
+        .attr("d", line(dataTimeFiltered));
+
+    // Update y-axis label
+    var newText = (yValue == "patents") ? "#Patents" :
+        ((yValue == "market_cap") ?  "Market Capitalization (USD)" : "24 Hour Trading Volume (USD)")
+    yLabel.text(newText);
+}
+
+
+

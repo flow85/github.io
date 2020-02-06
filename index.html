@@ -1,36 +1,77 @@
 <!doctype html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <meta name="description" content="">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <title>CoinStats</title>
+        <!-- Bootstrap Core CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- jQuery UI CSS -->
+        <link rel="stylesheet" href="css/jquery-ui.min.css">
+        <link rel="stylesheet" href="css/jquery-ui.structure.min.css">
+        <link rel="stylesheet" href="css/jquery-ui.theme.min.css">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="css/style.css">
+    </head>
 
-    <title>3.11 - Making a bar chart</title>
+    <body>
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img id="logo" src="img/fu_logo_small.png"></a>      
+            </div>
+        </nav>
 
-    <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css">
-</head>
-
-<body>
-
-    <nav class="navbar navbar-default"></nav>
-
-    <!-- Bootstrap grid setup -->
-    <div class="container">
-        <div class="row">
-            <div id="chart-area"></div>
+        <!-- Bootstrap grid setup -->
+        <div class="container">
+            <div id="selections" class="row">
+                <div class="col-md-4">
+                    <div id="slider-div">
+                        <label>Date: <span id="dateLabel1">2000</span> - <span id="dateLabel2">2018</span></label>
+                        <div id="date-slider"></div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <select id="coin-select" class="form-control">
+                        <option selected value="Baden-Wuerttemberg">Baden-Wuerttemberg</option>
+                        <option value="Bayern">Bayern</option>
+						<option value="Berlin">Berlin</option>
+						<option value="Brandenburg">Brandenburg</option>
+						<option value="Bremen">Bremen</option>
+						<option value="Hamburg">Hamburg</option>
+						<option value="Hessen">Hessen</option>
+						<option value="Mecklenburg-Vorpommern">Mecklenburg-Vorpommern</option>
+						<option value="Niedersachsen">Niedersachsen</option>
+						<option value="Nordrhein-Westfalen">Nordrhein-Westfalen</option>
+						<option value="Rheinland-Pfalz">Rheinland-Pfalz</option>
+						<option value="Saarland">Saarland</option>
+						<option value="Sachsen">Sachsen</option>
+						<option value="Sachsen-Anhalt">Sachsen-Anhalt</option>
+						<option value="Schleswig-Holstein">Schleswig-Holstein</option>
+						<option value="Thueringen">Thueringen</option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <select id="var-select" class="form-control">
+                        <option selected value="patents">#Patents</option>
+                        <!--<option value="market_cap">Market capitalization</option>
+                        <option value="24h_vol">24 hour trading volume</option>-->
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div id="chart-area"></div>  
+            </div>
         </div>
-    </div>
 
-    <!-- External JS Libraries -->
+    <!-- External JS libraries -->
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
     <script src="js/d3.min.js"></script>
     <!-- Custom JS -->
     <script src="js/main.js"></script>
 
-</body>
+    </body>
 </html>
 
 

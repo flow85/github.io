@@ -1,0 +1,1250 @@
+﻿{
+    "Baden-Wuerttemberg": [
+		{
+			"date": "2000",
+			"patents": "12302"
+		},
+		{
+			"date": "2001",
+			"patents": "11610"
+		},
+		{
+			"date": "2002",
+			"patents": "12297"
+		},
+		{
+			"date": "2003",
+			"patents": "13292"
+		},
+		{
+			"date": "2004",
+			"patents": "13491"
+		},
+		{
+			"date": "2005",
+			"patents": "12810"
+		},
+		{
+			"date": "2006",
+			"patents": "13304"
+		},
+		{
+			"date": "2007",
+			"patents": "13767"
+		},
+		{
+			"date": "2008",
+			"patents": "15007"
+		},
+		{
+			"date": "2009",
+			"patents": "15231"
+		},
+		{
+			"date": "2010",
+			"patents": "14783"
+		},
+		{
+			"date": "2011",
+			"patents": "14594"
+		},
+		{
+			"date": "2012",
+			"patents": "14243"
+		},
+		{
+			"date": "2013",
+			"patents": "14567"
+		},
+		{
+			"date": "2014",
+			"patents": "14535"
+		},
+		{
+			"date": "2015",
+			"patents": "14221"
+		},
+		{
+			"date": "2016",
+			"patents": "14379"
+		},
+		{
+			"date": "2017",
+			"patents": "14511"
+		},
+		{
+			"date": "2018",
+			"patents": "14608"
+		}
+	],
+	"Bayern": [
+		{
+			"date": "2000",
+			"patents": "13010"
+		},
+		{
+			"date": "2001",
+			"patents": "14304"
+		},
+		{
+			"date": "2002",
+			"patents": "13599"
+		},
+		{
+			"date": "2003",
+			"patents": "13761"
+		},
+		{
+			"date": "2004",
+			"patents": "14398"
+		},
+		{
+			"date": "2005",
+			"patents": "13709"
+		},
+		{
+			"date": "2006",
+			"patents": "14071"
+		},
+		{
+			"date": "2007",
+			"patents": "13904"
+		},
+		{
+			"date": "2008",
+			"patents": "13573"
+		},
+		{
+			"date": "2009",
+			"patents": "12600"
+		},
+		{
+			"date": "2010",
+			"patents": "13012"
+		},
+		{
+			"date": "2011",
+			"patents": "13722"
+		},
+		{
+			"date": "2012",
+			"patents": "14355"
+		},
+		{
+			"date": "2013",
+			"patents": "14843"
+		},
+		{
+			"date": "2014",
+			"patents": "15538"
+		},
+		{
+			"date": "2015",
+			"patents": "15347"
+		},
+		{
+			"date": "2016",
+			"patents": "15871"
+		},
+		{
+			"date": "2017",
+			"patents": "15483"
+		},
+		{
+			"date": "2018",
+			"patents": "14852"
+		}
+	],
+	"Berlin": [
+		{
+			"date": "2000",
+			"patents": "1242"
+		},
+		{
+			"date": "2001",
+			"patents": "1228"
+		},
+		{
+			"date": "2002",
+			"patents": "1099"
+		},
+		{
+			"date": "2003",
+			"patents": "1109"
+		},
+		{
+			"date": "2004",
+			"patents": "1016"
+		},
+		{
+			"date": "2005",
+			"patents": "878"
+		},
+		{
+			"date": "2006",
+			"patents": "963"
+		},
+		{
+			"date": "2007",
+			"patents": "1027"
+		},
+		{
+			"date": "2008",
+			"patents": "932"
+		},
+		{
+			"date": "2009",
+			"patents": "976"
+		},
+		{
+			"date": "2010",
+			"patents": "919"
+		},
+		{
+			"date": "2011",
+			"patents": "812"
+		},
+		{
+			"date": "2012",
+			"patents": "857"
+		},
+		{
+			"date": "2013",
+			"patents": "898"
+		},
+		{
+			"date": "2014",
+			"patents": "869"
+		},
+		{
+			"date": "2015",
+			"patents": "840"
+		},
+		{
+			"date": "2016",
+			"patents": "830"
+		},
+		{
+			"date": "2017",
+			"patents": "716"
+		},
+		{
+			"date": "2018",
+			"patents": "722"
+		}
+	],
+	"Brandenburg": [
+		{
+			"date": "2000",
+			"patents": "398"
+		},
+		{
+			"date": "2001",
+			"patents": "399"
+		},
+		{
+			"date": "2002",
+			"patents": "379"
+		},
+		{
+			"date": "2003",
+			"patents": "408"
+		},
+		{
+			"date": "2004",
+			"patents": "361"
+		},
+		{
+			"date": "2005",
+			"patents": "315"
+		},
+		{
+			"date": "2006",
+			"patents": "428"
+		},
+		{
+			"date": "2007",
+			"patents": "393"
+		},
+		{
+			"date": "2008",
+			"patents": "362"
+		},
+		{
+			"date": "2009",
+			"patents": "365"
+		},
+		{
+			"date": "2010",
+			"patents": "323"
+		},
+		{
+			"date": "2011",
+			"patents": "351"
+		},
+		{
+			"date": "2012",
+			"patents": "299"
+		},
+		{
+			"date": "2013",
+			"patents": "322"
+		},
+		{
+			"date": "2014",
+			"patents": "326"
+		},
+		{
+			"date": "2015",
+			"patents": "359"
+		},
+		{
+			"date": "2016",
+			"patents": "331"
+		},
+		{
+			"date": "2017",
+			"patents": "328"
+		},
+		{
+			"date": "2018",
+			"patents": "289"
+		}
+	],
+	"Bremen": [
+		{
+			"date": "2000",
+			"patents": "164"
+		},
+		{
+			"date": "2001",
+			"patents": "198"
+		},
+		{
+			"date": "2002",
+			"patents": "143"
+		},
+		{
+			"date": "2003",
+			"patents": "158"
+		},
+		{
+			"date": "2004",
+			"patents": "185"
+		},
+		{
+			"date": "2005",
+			"patents": "178"
+		},
+		{
+			"date": "2006",
+			"patents": "147"
+		},
+		{
+			"date": "2007",
+			"patents": "183"
+		},
+		{
+			"date": "2008",
+			"patents": "146"
+		},
+		{
+			"date": "2009",
+			"patents": "162"
+		},
+		{
+			"date": "2010",
+			"patents": "163"
+		},
+		{
+			"date": "2011",
+			"patents": "153"
+		},
+		{
+			"date": "2012",
+			"patents": "150"
+		},
+		{
+			"date": "2013",
+			"patents": "160"
+		},
+		{
+			"date": "2014",
+			"patents": "143"
+		},
+		{
+			"date": "2015",
+			"patents": "158"
+		},
+		{
+			"date": "2016",
+			"patents": "143"
+		},
+		{
+			"date": "2017",
+			"patents": "129"
+		},
+		{
+			"date": "2018",
+			"patents": "135"
+		}
+	],
+	"Hamburg": [
+		{
+			"date": "2000",
+			"patents": "1185"
+		},
+		{
+			"date": "2001",
+			"patents": "1427"
+		},
+		{
+			"date": "2002",
+			"patents": "1166"
+		},
+		{
+			"date": "2003",
+			"patents": "955"
+		},
+		{
+			"date": "2004",
+			"patents": "1105"
+		},
+		{
+			"date": "2005",
+			"patents": "918"
+		},
+		{
+			"date": "2006",
+			"patents": "948"
+		},
+		{
+			"date": "2007",
+			"patents": "1008"
+		},
+		{
+			"date": "2008",
+			"patents": "1093"
+		},
+		{
+			"date": "2009",
+			"patents": "932"
+		},
+		{
+			"date": "2010",
+			"patents": "914"
+		},
+		{
+			"date": "2011",
+			"patents": "1012"
+		},
+		{
+			"date": "2012",
+			"patents": "761"
+		},
+		{
+			"date": "2013",
+			"patents": "742"
+		},
+		{
+			"date": "2014",
+			"patents": "807"
+		},
+		{
+			"date": "2015",
+			"patents": "806"
+		},
+		{
+			"date": "2016",
+			"patents": "790"
+		},
+		{
+			"date": "2017",
+			"patents": "770"
+		},
+		{
+			"date": "2018",
+			"patents": "864"
+		}
+	],
+	"Hessen": [
+		{
+			"date": "2000",
+			"patents": "4688"
+		},
+		{
+			"date": "2001",
+			"patents": "4159"
+		},
+		{
+			"date": "2002",
+			"patents": "4113"
+		},
+		{
+			"date": "2003",
+			"patents": "4003"
+		},
+		{
+			"date": "2004",
+			"patents": "4186"
+		},
+		{
+			"date": "2005",
+			"patents": "3437"
+		},
+		{
+			"date": "2006",
+			"patents": "3237"
+		},
+		{
+			"date": "2007",
+			"patents": "3008"
+		},
+		{
+			"date": "2008",
+			"patents": "2669"
+		},
+		{
+			"date": "2009",
+			"patents": "2448"
+		},
+		{
+			"date": "2010",
+			"patents": "2431"
+		},
+		{
+			"date": "2011",
+			"patents": "2374"
+		},
+		{
+			"date": "2012",
+			"patents": "2295"
+		},
+		{
+			"date": "2013",
+			"patents": "2165"
+		},
+		{
+			"date": "2014",
+			"patents": "2042"
+		},
+		{
+			"date": "2015",
+			"patents": "1906"
+		},
+		{
+			"date": "2016",
+			"patents": "1937"
+		},
+		{
+			"date": "2017",
+			"patents": "1927"
+		},
+		{
+			"date": "2018",
+			"patents": "1619"
+		}
+	],
+	"Mecklenburg-Vorpommern": [
+		{
+			"date": "2000",
+			"patents": "206"
+		},
+		{
+			"date": "2001",
+			"patents": "183"
+		},
+		{
+			"date": "2002",
+			"patents": "194"
+		},
+		{
+			"date": "2003",
+			"patents": "243"
+		},
+		{
+			"date": "2004",
+			"patents": "218"
+		},
+		{
+			"date": "2005",
+			"patents": "200"
+		},
+		{
+			"date": "2006",
+			"patents": "182"
+		},
+		{
+			"date": "2007",
+			"patents": "175"
+		},
+		{
+			"date": "2008",
+			"patents": "184"
+		},
+		{
+			"date": "2009",
+			"patents": "196"
+		},
+		{
+			"date": "2010",
+			"patents": "170"
+		},
+		{
+			"date": "2011",
+			"patents": "167"
+		},
+		{
+			"date": "2012",
+			"patents": "180"
+		},
+		{
+			"date": "2013",
+			"patents": "181"
+		},
+		{
+			"date": "2014",
+			"patents": "169"
+		},
+		{
+			"date": "2015",
+			"patents": "155"
+		},
+		{
+			"date": "2016",
+			"patents": "105"
+		},
+		{
+			"date": "2017",
+			"patents": "135"
+		},
+		{
+			"date": "2018",
+			"patents": "145"
+		}
+	],
+	"Niedersachsen": [
+		{
+			"date": "2000",
+			"patents": "3427"
+		},
+		{
+			"date": "2001",
+			"patents": "3200"
+		},
+		{
+			"date": "2002",
+			"patents": "2861"
+		},
+		{
+			"date": "2003",
+			"patents": "2893"
+		},
+		{
+			"date": "2004",
+			"patents": "2968"
+		},
+		{
+			"date": "2005",
+			"patents": "2711"
+		},
+		{
+			"date": "2006",
+			"patents": "2602"
+		},
+		{
+			"date": "2007",
+			"patents": "2749"
+		},
+		{
+			"date": "2008",
+			"patents": "3337"
+		},
+		{
+			"date": "2009",
+			"patents": "2910"
+		},
+		{
+			"date": "2010",
+			"patents": "2927"
+		},
+		{
+			"date": "2011",
+			"patents": "2987"
+		},
+		{
+			"date": "2012",
+			"patents": "2958"
+		},
+		{
+			"date": "2013",
+			"patents": "2927"
+		},
+		{
+			"date": "2014",
+			"patents": "3138"
+		},
+		{
+			"date": "2015",
+			"patents": "3486"
+		},
+		{
+			"date": "2016",
+			"patents": "3700"
+		},
+		{
+			"date": "2017",
+			"patents": "3514"
+		},
+		{
+			"date": "2018",
+			"patents": "3614"
+		}
+	],
+	"Nordrhein-Westfalen": [
+		{
+			"date": "2000",
+			"patents": "10274"
+		},
+		{
+			"date": "2001",
+			"patents": "9929"
+		},
+		{
+			"date": "2002",
+			"patents": "9117"
+		},
+		{
+			"date": "2003",
+			"patents": "8975"
+		},
+		{
+			"date": "2004",
+			"patents": "8872"
+		},
+		{
+			"date": "2005",
+			"patents": "8152"
+		},
+		{
+			"date": "2006",
+			"patents": "8189"
+		},
+		{
+			"date": "2007",
+			"patents": "8324"
+		},
+		{
+			"date": "2008",
+			"patents": "7814"
+		},
+		{
+			"date": "2009",
+			"patents": "7333"
+		},
+		{
+			"date": "2010",
+			"patents": "7536"
+		},
+		{
+			"date": "2011",
+			"patents": "7103"
+		},
+		{
+			"date": "2012",
+			"patents": "6765"
+		},
+		{
+			"date": "2013",
+			"patents": "7073"
+		},
+		{
+			"date": "2014",
+			"patents": "7119"
+		},
+		{
+			"date": "2015",
+			"patents": "6877"
+		},
+		{
+			"date": "2016",
+			"patents": "7073"
+		},
+		{
+			"date": "2017",
+			"patents": "7209"
+		},
+		{
+			"date": "2018",
+			"patents": "6856"
+		}
+	],
+	"Rheinland-Pfalz": [
+		{
+			"date": "2000",
+			"patents": "2341"
+		},
+		{
+			"date": "2001",
+			"patents": "2535"
+		},
+		{
+			"date": "2002",
+			"patents": "2591"
+		},
+		{
+			"date": "2003",
+			"patents": "2677"
+		},
+		{
+			"date": "2004",
+			"patents": "2719"
+		},
+		{
+			"date": "2005",
+			"patents": "2218"
+		},
+		{
+			"date": "2006",
+			"patents": "1331"
+		},
+		{
+			"date": "2007",
+			"patents": "1262"
+		},
+		{
+			"date": "2008",
+			"patents": "1296"
+		},
+		{
+			"date": "2009",
+			"patents": "1259"
+		},
+		{
+			"date": "2010",
+			"patents": "1233"
+		},
+		{
+			"date": "2011",
+			"patents": "1183"
+		},
+		{
+			"date": "2012",
+			"patents": "1129"
+		},
+		{
+			"date": "2013",
+			"patents": "1036"
+		},
+		{
+			"date": "2014",
+			"patents": "1032"
+		},
+		{
+			"date": "2015",
+			"patents": "938"
+		},
+		{
+			"date": "2016",
+			"patents": "1077"
+		},
+		{
+			"date": "2017",
+			"patents": "921"
+		},
+		{
+			"date": "2018",
+			"patents": "910"
+		}
+	],
+	"Saarland": [
+		{
+			"date": "2000",
+			"patents": "351"
+		},
+		{
+			"date": "2001",
+			"patents": "358"
+		},
+		{
+			"date": "2002",
+			"patents": "342"
+		},
+		{
+			"date": "2003",
+			"patents": "332"
+		},
+		{
+			"date": "2004",
+			"patents": "368"
+		},
+		{
+			"date": "2005",
+			"patents": "360"
+		},
+		{
+			"date": "2006",
+			"patents": "311"
+		},
+		{
+			"date": "2007",
+			"patents": "331"
+		},
+		{
+			"date": "2008",
+			"patents": "295"
+		},
+		{
+			"date": "2009",
+			"patents": "304"
+		},
+		{
+			"date": "2010",
+			"patents": "258"
+		},
+		{
+			"date": "2011",
+			"patents": "251"
+		},
+		{
+			"date": "2012",
+			"patents": "249"
+		},
+		{
+			"date": "2013",
+			"patents": "252"
+		},
+		{
+			"date": "2014",
+			"patents": "222"
+		},
+		{
+			"date": "2015",
+			"patents": "214"
+		},
+		{
+			"date": "2016",
+			"patents": "197"
+		},
+		{
+			"date": "2017",
+			"patents": "197"
+		},
+		{
+			"date": "2018",
+			"patents": "175"
+		}
+	],
+	"Sachsen": [
+		{
+			"date": "2000",
+			"patents": "1000"
+		},
+		{
+			"date": "2001",
+			"patents": "933"
+		},
+		{
+			"date": "2002",
+			"patents": "873"
+		},
+		{
+			"date": "2003",
+			"patents": "859"
+		},
+		{
+			"date": "2004",
+			"patents": "850"
+		},
+		{
+			"date": "2005",
+			"patents": "856"
+		},
+		{
+			"date": "2006",
+			"patents": "814"
+		},
+		{
+			"date": "2007",
+			"patents": "950"
+		},
+		{
+			"date": "2008",
+			"patents": "1013"
+		},
+		{
+			"date": "2009",
+			"patents": "1115"
+		},
+		{
+			"date": "2010",
+			"patents": "1124"
+		},
+		{
+			"date": "2011",
+			"patents": "1049"
+		},
+		{
+			"date": "2012",
+			"patents": "1057"
+		},
+		{
+			"date": "2013",
+			"patents": "968"
+		},
+		{
+			"date": "2014",
+			"patents": "966"
+		},
+		{
+			"date": "2015",
+			"patents": "905"
+		},
+		{
+			"date": "2016",
+			"patents": "810"
+		},
+		{
+			"date": "2017",
+			"patents": "719"
+		},
+		{
+			"date": "2018",
+			"patents": "594"
+		}
+	],
+	"Sachsen-Anhalt": [
+		{
+			"date": "2000",
+			"patents": "447"
+		},
+		{
+			"date": "2001",
+			"patents": "408"
+		},
+		{
+			"date": "2002",
+			"patents": "375"
+		},
+		{
+			"date": "2003",
+			"patents": "492"
+		},
+		{
+			"date": "2004",
+			"patents": "414"
+		},
+		{
+			"date": "2005",
+			"patents": "368"
+		},
+		{
+			"date": "2006",
+			"patents": "344"
+		},
+		{
+			"date": "2007",
+			"patents": "338"
+		},
+		{
+			"date": "2008",
+			"patents": "367"
+		},
+		{
+			"date": "2009",
+			"patents": "310"
+		},
+		{
+			"date": "2010",
+			"patents": "335"
+		},
+		{
+			"date": "2011",
+			"patents": "310"
+		},
+		{
+			"date": "2012",
+			"patents": "247"
+		},
+		{
+			"date": "2013",
+			"patents": "228"
+		},
+		{
+			"date": "2014",
+			"patents": "227"
+		},
+		{
+			"date": "2015",
+			"patents": "200"
+		},
+		{
+			"date": "2016",
+			"patents": "229"
+		},
+		{
+			"date": "2017",
+			"patents": "186"
+		},
+		{
+			"date": "2018",
+			"patents": "205"
+		}
+	],
+	"Schleswig-Holstein": [
+		{
+			"date": "2000",
+			"patents": "678"
+		},
+		{
+			"date": "2001",
+			"patents": "679"
+		},
+		{
+			"date": "2002",
+			"patents": "607"
+		},
+		{
+			"date": "2003",
+			"patents": "627"
+		},
+		{
+			"date": "2004",
+			"patents": "660"
+		},
+		{
+			"date": "2005",
+			"patents": "597"
+		},
+		{
+			"date": "2006",
+			"patents": "586"
+		},
+		{
+			"date": "2007",
+			"patents": "624"
+		},
+		{
+			"date": "2008",
+			"patents": "594"
+		},
+		{
+			"date": "2009",
+			"patents": "566"
+		},
+		{
+			"date": "2010",
+			"patents": "562"
+		},
+		{
+			"date": "2011",
+			"patents": "486"
+		},
+		{
+			"date": "2012",
+			"patents": "516"
+		},
+		{
+			"date": "2013",
+			"patents": "465"
+		},
+		{
+			"date": "2014",
+			"patents": "462"
+		},
+		{
+			"date": "2015",
+			"patents": "463"
+		},
+		{
+			"date": "2016",
+			"patents": "502"
+		},
+		{
+			"date": "2017",
+			"patents": "509"
+		},
+		{
+			"date": "2018",
+			"patents": "474"
+		}
+	],
+	"Thueringen": [
+		{
+			"date": "2000",
+			"patents": "734"
+		},
+		{
+			"date": "2001",
+			"patents": "796"
+		},
+		{
+			"date": "2002",
+			"patents": "748"
+		},
+		{
+			"date": "2003",
+			"patents": "849"
+		},
+		{
+			"date": "2004",
+			"patents": "789"
+		},
+		{
+			"date": "2005",
+			"patents": "711"
+		},
+		{
+			"date": "2006",
+			"patents": "650"
+		},
+		{
+			"date": "2007",
+			"patents": "616"
+		},
+		{
+			"date": "2008",
+			"patents": "625"
+		},
+		{
+			"date": "2009",
+			"patents": "623"
+		},
+		{
+			"date": "2010",
+			"patents": "590"
+		},
+		{
+			"date": "2011",
+			"patents": "565"
+		},
+		{
+			"date": "2012",
+			"patents": "594"
+		},
+		{
+			"date": "2013",
+			"patents": "536"
+		},
+		{
+			"date": "2014",
+			"patents": "559"
+		},
+		{
+			"date": "2015",
+			"patents": "514"
+		},
+		{
+			"date": "2016",
+			"patents": "519"
+		},
+		{
+			"date": "2017",
+			"patents": "537"
+		},
+		{
+			"date": "2018",
+			"patents": "547"
+		}
+	]
+}
