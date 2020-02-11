@@ -41,8 +41,8 @@ DonutChart.prototype.initVis = function(){
         .attr("x", -vis.width/2)
         .attr("font-size", "15px")
         .attr("text-anchor", "start")
-        .text(vis.variable == "market_cap" ? 
-        	"Market Capitalization" : "24 Hour Trading Volume");
+        .text(vis.variable == "projectstarts" ? 
+        	"Projectstartshare in 2000-2018" : "Patentshare in 2000-2018");
 
     vis.wrangleData();
 }

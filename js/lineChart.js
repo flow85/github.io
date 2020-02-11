@@ -148,8 +148,8 @@ LineChart.prototype.updateVis = function(){
 
     // Update y-axis label
     var newLabel = (vis.yVariable == "patents") ? "#Patents" :
-        ((vis.yVariable == "market_cap") ? "Market Capitalization (USD)" :
-            "24 Hour Trading Volume (USD)")
+        ((vis.yVariable == "projectstarts") ? "#Projectstarts" :
+            "#Projectstarts")
     vis.yLabel.text(newLabel)
 
     var line = d3.line()

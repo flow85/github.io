@@ -64,7 +64,7 @@ function brushed() {
     lineChart.wrangleData();
 }
 
-d3.json("data/patentdata_strings.json").then(function(data){
+d3.json("data/patens_and_projectstarts.json").then(function(data){
     // Prepare and clean data
     for (var coin in data) {
         if (!data.hasOwnProperty(coin)) {
@@ -75,8 +75,9 @@ d3.json("data/patentdata_strings.json").then(function(data){
         })
         filteredData[coin].forEach(function(d){
             d["patents"] = +d["patents"];
-            d["24h_vol"] = +d["24h_vol"];
-            d["market_cap"] = +d["market_cap"];
+			d["projectstarts"] = +d["projectstarts"];
+            //d["24h_vol"] = +d["24h_vol"];
+            //d["market_cap"] = +d["market_cap"];
             d["date"] = parseTime(d["date"])
         });
         donutData.push({
@@ -87,8 +88,8 @@ d3.json("data/patentdata_strings.json").then(function(data){
 
     lineChart = new LineChart("#line-area");
 
-    donutChart1 = new DonutChart("#donut-area1", "24h_vol");
-    donutChart2 = new DonutChart("#donut-area2", "market_cap");
+    donutChart1 = new DonutChart("#donut-area1", "projectstarts");
+    donutChart2 = new DonutChart("#donut-area2", "patents");
 
     timeline = new Timeline("#timeline-area");
 
