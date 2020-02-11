@@ -1,0 +1,982 @@
+[
+    {
+        "state": "Baden-Wuerttemberg",
+        "topic": "Agrar-, Forstwissenschaften und Tiermedizin",
+        "value": 2
+    },
+    {
+        "state": "Bayern",
+        "topic": "Agrar-, Forstwissenschaften und Tiermedizin",
+        "value": 28
+    },
+    {
+        "state": "Berlin",
+        "topic": "Agrar-, Forstwissenschaften und Tiermedizin",
+        "value": 16
+    },
+    {
+        "state": "Brandenburg",
+        "topic": "Agrar-, Forstwissenschaften und Tiermedizin",
+        "value": 18
+    },
+    {
+        "state": "Bremen",
+        "topic": "Agrar-, Forstwissenschaften und Tiermedizin",
+        "value": 0
+    },
+    {
+        "state": "Hamburg",
+        "topic": "Agrar-, Forstwissenschaften und Tiermedizin",
+        "value": 0
+    },
+    {
+        "state": "Hessen",
+        "topic": "Agrar-, Forstwissenschaften und Tiermedizin",
+        "value": 31
+    },
+    {
+        "state": "Mecklenburg-Vorpommern",
+        "topic": "Agrar-, Forstwissenschaften und Tiermedizin",
+        "value": 0
+    },
+    {
+        "state": "Niedersachsen",
+        "topic": "Agrar-, Forstwissenschaften und Tiermedizin",
+        "value": 41
+    },
+    {
+        "state": "Nordrhein-Westfalen",
+        "topic": "Agrar-, Forstwissenschaften und Tiermedizin",
+        "value": 13
+    },
+    {
+        "state": "Rheinland-Pfalz",
+        "topic": "Agrar-, Forstwissenschaften und Tiermedizin",
+        "value": 0
+    },
+    {
+        "state": "Sachsen",
+        "topic": "Agrar-, Forstwissenschaften und Tiermedizin",
+        "value": 0
+    },
+    {
+        "state": "Sachsen-Anhalt",
+        "topic": "Agrar-, Forstwissenschaften und Tiermedizin",
+        "value": 0
+    },
+    {
+        "state": "Schleswig-Holstein",
+        "topic": "Agrar-, Forstwissenschaften und Tiermedizin",
+        "value": 0
+    },
+    {
+        "state": "Baden-Wuerttemberg",
+        "topic": "Bauwesen und Architektur",
+        "value": 20
+    },
+    {
+        "state": "Bayern",
+        "topic": "Bauwesen und Architektur",
+        "value": 6
+    },
+    {
+        "state": "Berlin",
+        "topic": "Bauwesen und Architektur",
+        "value": 8
+    },
+    {
+        "state": "Brandenburg",
+        "topic": "Bauwesen und Architektur",
+        "value": 7
+    },
+    {
+        "state": "Bremen",
+        "topic": "Bauwesen und Architektur",
+        "value": 0
+    },
+    {
+        "state": "Hamburg",
+        "topic": "Bauwesen und Architektur",
+        "value": 0
+    },
+    {
+        "state": "Hessen",
+        "topic": "Bauwesen und Architektur",
+        "value": 9
+    },
+    {
+        "state": "Mecklenburg-Vorpommern",
+        "topic": "Bauwesen und Architektur",
+        "value": 3
+    },
+    {
+        "state": "Niedersachsen",
+        "topic": "Bauwesen und Architektur",
+        "value": 40
+    },
+    {
+        "state": "Nordrhein-Westfalen",
+        "topic": "Bauwesen und Architektur",
+        "value": 69
+    },
+    {
+        "state": "Rheinland-Pfalz",
+        "topic": "Bauwesen und Architektur",
+        "value": 5
+    },
+    {
+        "state": "Sachsen",
+        "topic": "Bauwesen und Architektur",
+        "value": 1
+    },
+    {
+        "state": "Sachsen-Anhalt",
+        "topic": "Bauwesen und Architektur",
+        "value": 0
+    },
+    {
+        "state": "Schleswig-Holstein",
+        "topic": "Bauwesen und Architektur",
+        "value": 0
+    },
+    {
+        "state": "Baden-Wuerttemberg",
+        "topic": "Biologie",
+        "value": 530
+    },
+    {
+        "state": "Bayern",
+        "topic": "Biologie",
+        "value": 760
+    },
+    {
+        "state": "Berlin",
+        "topic": "Biologie",
+        "value": 226
+    },
+    {
+        "state": "Brandenburg",
+        "topic": "Biologie",
+        "value": 7
+    },
+    {
+        "state": "Bremen",
+        "topic": "Biologie",
+        "value": 2
+    },
+    {
+        "state": "Hamburg",
+        "topic": "Biologie",
+        "value": 149
+    },
+    {
+        "state": "Hessen",
+        "topic": "Biologie",
+        "value": 64
+    },
+    {
+        "state": "Mecklenburg-Vorpommern",
+        "topic": "Biologie",
+        "value": 20
+    },
+    {
+        "state": "Niedersachsen",
+        "topic": "Biologie",
+        "value": 292
+    },
+    {
+        "state": "Nordrhein-Westfalen",
+        "topic": "Biologie",
+        "value": 663
+    },
+    {
+        "state": "Rheinland-Pfalz",
+        "topic": "Biologie",
+        "value": 48
+    },
+    {
+        "state": "Sachsen",
+        "topic": "Biologie",
+        "value": 64
+    },
+    {
+        "state": "Sachsen-Anhalt",
+        "topic": "Biologie",
+        "value": 110
+    },
+    {
+        "state": "Schleswig-Holstein",
+        "topic": "Biologie",
+        "value": 3
+    },
+    {
+        "state": "Baden-Wuerttemberg",
+        "topic": "Chemie",
+        "value": 256
+    },
+    {
+        "state": "Bayern",
+        "topic": "Chemie",
+        "value": 334
+    },
+    {
+        "state": "Berlin",
+        "topic": "Chemie",
+        "value": 71
+    },
+    {
+        "state": "Brandenburg",
+        "topic": "Chemie",
+        "value": 7
+    },
+    {
+        "state": "Bremen",
+        "topic": "Chemie",
+        "value": 9
+    },
+    {
+        "state": "Hamburg",
+        "topic": "Chemie",
+        "value": 54
+    },
+    {
+        "state": "Hessen",
+        "topic": "Chemie",
+        "value": 44
+    },
+    {
+        "state": "Mecklenburg-Vorpommern",
+        "topic": "Chemie",
+        "value": 2
+    },
+    {
+        "state": "Niedersachsen",
+        "topic": "Chemie",
+        "value": 134
+    },
+    {
+        "state": "Nordrhein-Westfalen",
+        "topic": "Chemie",
+        "value": 429
+    },
+    {
+        "state": "Rheinland-Pfalz",
+        "topic": "Chemie",
+        "value": 83
+    },
+    {
+        "state": "Sachsen",
+        "topic": "Chemie",
+        "value": 45
+    },
+    {
+        "state": "Sachsen-Anhalt",
+        "topic": "Chemie",
+        "value": 39
+    },
+    {
+        "state": "Schleswig-Holstein",
+        "topic": "Chemie",
+        "value": 0
+    },
+    {
+        "state": "Baden-Wuerttemberg",
+        "topic": "Geisteswissenschaften",
+        "value": 301
+    },
+    {
+        "state": "Bayern",
+        "topic": "Geisteswissenschaften",
+        "value": 96
+    },
+    {
+        "state": "Berlin",
+        "topic": "Geisteswissenschaften",
+        "value": 148
+    },
+    {
+        "state": "Brandenburg",
+        "topic": "Geisteswissenschaften",
+        "value": 57
+    },
+    {
+        "state": "Bremen",
+        "topic": "Geisteswissenschaften",
+        "value": 4
+    },
+    {
+        "state": "Hamburg",
+        "topic": "Geisteswissenschaften",
+        "value": 266
+    },
+    {
+        "state": "Hessen",
+        "topic": "Geisteswissenschaften",
+        "value": 92
+    },
+    {
+        "state": "Mecklenburg-Vorpommern",
+        "topic": "Geisteswissenschaften",
+        "value": 20
+    },
+    {
+        "state": "Niedersachsen",
+        "topic": "Geisteswissenschaften",
+        "value": 52
+    },
+    {
+        "state": "Nordrhein-Westfalen",
+        "topic": "Geisteswissenschaften",
+        "value": 353
+    },
+    {
+        "state": "Rheinland-Pfalz",
+        "topic": "Geisteswissenschaften",
+        "value": 37
+    },
+    {
+        "state": "Sachsen",
+        "topic": "Geisteswissenschaften",
+        "value": 43
+    },
+    {
+        "state": "Sachsen-Anhalt",
+        "topic": "Geisteswissenschaften",
+        "value": 29
+    },
+    {
+        "state": "Schleswig-Holstein",
+        "topic": "Geisteswissenschaften",
+        "value": 1
+    },
+    {
+        "state": "Baden-Wuerttemberg",
+        "topic": "Geowissenschaften",
+        "value": 78
+    },
+    {
+        "state": "Bayern",
+        "topic": "Geowissenschaften",
+        "value": 49
+    },
+    {
+        "state": "Berlin",
+        "topic": "Geowissenschaften",
+        "value": 98
+    },
+    {
+        "state": "Brandenburg",
+        "topic": "Geowissenschaften",
+        "value": 16
+    },
+    {
+        "state": "Bremen",
+        "topic": "Geowissenschaften",
+        "value": 34
+    },
+    {
+        "state": "Hamburg",
+        "topic": "Geowissenschaften",
+        "value": 123
+    },
+    {
+        "state": "Hessen",
+        "topic": "Geowissenschaften",
+        "value": 5
+    },
+    {
+        "state": "Mecklenburg-Vorpommern",
+        "topic": "Geowissenschaften",
+        "value": 1
+    },
+    {
+        "state": "Niedersachsen",
+        "topic": "Geowissenschaften",
+        "value": 80
+    },
+    {
+        "state": "Nordrhein-Westfalen",
+        "topic": "Geowissenschaften",
+        "value": 157
+    },
+    {
+        "state": "Rheinland-Pfalz",
+        "topic": "Geowissenschaften",
+        "value": 7
+    },
+    {
+        "state": "Sachsen",
+        "topic": "Geowissenschaften",
+        "value": 48
+    },
+    {
+        "state": "Sachsen-Anhalt",
+        "topic": "Geowissenschaften",
+        "value": 7
+    },
+    {
+        "state": "Schleswig-Holstein",
+        "topic": "Geowissenschaften",
+        "value": 0
+    },
+    {
+        "state": "Baden-Wuerttemberg",
+        "topic": "Informatik, System- und Elektrotechnik",
+        "value": 155
+    },
+    {
+        "state": "Bayern",
+        "topic": "Informatik, System- und Elektrotechnik",
+        "value": 179
+    },
+    {
+        "state": "Berlin",
+        "topic": "Informatik, System- und Elektrotechnik",
+        "value": 19
+    },
+    {
+        "state": "Brandenburg",
+        "topic": "Informatik, System- und Elektrotechnik",
+        "value": 1
+    },
+    {
+        "state": "Bremen",
+        "topic": "Informatik, System- und Elektrotechnik",
+        "value": 73
+    },
+    {
+        "state": "Hamburg",
+        "topic": "Informatik, System- und Elektrotechnik",
+        "value": 21
+    },
+    {
+        "state": "Hessen",
+        "topic": "Informatik, System- und Elektrotechnik",
+        "value": 54
+    },
+    {
+        "state": "Mecklenburg-Vorpommern",
+        "topic": "Informatik, System- und Elektrotechnik",
+        "value": 3
+    },
+    {
+        "state": "Niedersachsen",
+        "topic": "Informatik, System- und Elektrotechnik",
+        "value": 98
+    },
+    {
+        "state": "Nordrhein-Westfalen",
+        "topic": "Informatik, System- und Elektrotechnik",
+        "value": 188
+    },
+    {
+        "state": "Rheinland-Pfalz",
+        "topic": "Informatik, System- und Elektrotechnik",
+        "value": 16
+    },
+    {
+        "state": "Sachsen",
+        "topic": "Informatik, System- und Elektrotechnik",
+        "value": 47
+    },
+    {
+        "state": "Sachsen-Anhalt",
+        "topic": "Informatik, System- und Elektrotechnik",
+        "value": 14
+    },
+    {
+        "state": "Schleswig-Holstein",
+        "topic": "Informatik, System- und Elektrotechnik",
+        "value": 0
+    },
+    {
+        "state": "Baden-Wuerttemberg",
+        "topic": "Maschinenbau und Produktionstechnik",
+        "value": 56
+    },
+    {
+        "state": "Bayern",
+        "topic": "Maschinenbau und Produktionstechnik",
+        "value": 272
+    },
+    {
+        "state": "Berlin",
+        "topic": "Maschinenbau und Produktionstechnik",
+        "value": 63
+    },
+    {
+        "state": "Brandenburg",
+        "topic": "Maschinenbau und Produktionstechnik",
+        "value": 4
+    },
+    {
+        "state": "Bremen",
+        "topic": "Maschinenbau und Produktionstechnik",
+        "value": 81
+    },
+    {
+        "state": "Hamburg",
+        "topic": "Maschinenbau und Produktionstechnik",
+        "value": 0
+    },
+    {
+        "state": "Hessen",
+        "topic": "Maschinenbau und Produktionstechnik",
+        "value": 105
+    },
+    {
+        "state": "Mecklenburg-Vorpommern",
+        "topic": "Maschinenbau und Produktionstechnik",
+        "value": 3
+    },
+    {
+        "state": "Niedersachsen",
+        "topic": "Maschinenbau und Produktionstechnik",
+        "value": 182
+    },
+    {
+        "state": "Nordrhein-Westfalen",
+        "topic": "Maschinenbau und Produktionstechnik",
+        "value": 165
+    },
+    {
+        "state": "Rheinland-Pfalz",
+        "topic": "Maschinenbau und Produktionstechnik",
+        "value": 26
+    },
+    {
+        "state": "Sachsen",
+        "topic": "Maschinenbau und Produktionstechnik",
+        "value": 75
+    },
+    {
+        "state": "Sachsen-Anhalt",
+        "topic": "Maschinenbau und Produktionstechnik",
+        "value": 14
+    },
+    {
+        "state": "Schleswig-Holstein",
+        "topic": "Maschinenbau und Produktionstechnik",
+        "value": 0
+    },
+    {
+        "state": "Baden-Wuerttemberg",
+        "topic": "Materialwissenschaft und Werkstofftechnik",
+        "value": 69
+    },
+    {
+        "state": "Bayern",
+        "topic": "Materialwissenschaft und Werkstofftechnik",
+        "value": 76
+    },
+    {
+        "state": "Berlin",
+        "topic": "Materialwissenschaft und Werkstofftechnik",
+        "value": 6
+    },
+    {
+        "state": "Brandenburg",
+        "topic": "Materialwissenschaft und Werkstofftechnik",
+        "value": 5
+    },
+    {
+        "state": "Bremen",
+        "topic": "Materialwissenschaft und Werkstofftechnik",
+        "value": 48
+    },
+    {
+        "state": "Hamburg",
+        "topic": "Materialwissenschaft und Werkstofftechnik",
+        "value": 0
+    },
+    {
+        "state": "Hessen",
+        "topic": "Materialwissenschaft und Werkstofftechnik",
+        "value": 47
+    },
+    {
+        "state": "Mecklenburg-Vorpommern",
+        "topic": "Materialwissenschaft und Werkstofftechnik",
+        "value": 1
+    },
+    {
+        "state": "Niedersachsen",
+        "topic": "Materialwissenschaft und Werkstofftechnik",
+        "value": 85
+    },
+    {
+        "state": "Nordrhein-Westfalen",
+        "topic": "Materialwissenschaft und Werkstofftechnik",
+        "value": 225
+    },
+    {
+        "state": "Rheinland-Pfalz",
+        "topic": "Materialwissenschaft und Werkstofftechnik",
+        "value": 11
+    },
+    {
+        "state": "Sachsen",
+        "topic": "Materialwissenschaft und Werkstofftechnik",
+        "value": 103
+    },
+    {
+        "state": "Sachsen-Anhalt",
+        "topic": "Materialwissenschaft und Werkstofftechnik",
+        "value": 8
+    },
+    {
+        "state": "Schleswig-Holstein",
+        "topic": "Materialwissenschaft und Werkstofftechnik",
+        "value": 1
+    },
+    {
+        "state": "Baden-Wuerttemberg",
+        "topic": "Mathematik",
+        "value": 73
+    },
+    {
+        "state": "Bayern",
+        "topic": "Mathematik",
+        "value": 97
+    },
+    {
+        "state": "Berlin",
+        "topic": "Mathematik",
+        "value": 98
+    },
+    {
+        "state": "Brandenburg",
+        "topic": "Mathematik",
+        "value": 17
+    },
+    {
+        "state": "Bremen",
+        "topic": "Mathematik",
+        "value": 4
+    },
+    {
+        "state": "Hamburg",
+        "topic": "Mathematik",
+        "value": 36
+    },
+    {
+        "state": "Hessen",
+        "topic": "Mathematik",
+        "value": 26
+    },
+    {
+        "state": "Mecklenburg-Vorpommern",
+        "topic": "Mathematik",
+        "value": 1
+    },
+    {
+        "state": "Niedersachsen",
+        "topic": "Mathematik",
+        "value": 10
+    },
+    {
+        "state": "Nordrhein-Westfalen",
+        "topic": "Mathematik",
+        "value": 244
+    },
+    {
+        "state": "Rheinland-Pfalz",
+        "topic": "Mathematik",
+        "value": 76
+    },
+    {
+        "state": "Sachsen",
+        "topic": "Mathematik",
+        "value": 17
+    },
+    {
+        "state": "Sachsen-Anhalt",
+        "topic": "Mathematik",
+        "value": 1
+    },
+    {
+        "state": "Schleswig-Holstein",
+        "topic": "Mathematik",
+        "value": 0
+    },
+    {
+        "state": "Baden-Wuerttemberg",
+        "topic": "Medizin",
+        "value": 963
+    },
+    {
+        "state": "Bayern",
+        "topic": "Medizin",
+        "value": 1388
+    },
+    {
+        "state": "Berlin",
+        "topic": "Medizin",
+        "value": 411
+    },
+    {
+        "state": "Brandenburg",
+        "topic": "Medizin",
+        "value": 3
+    },
+    {
+        "state": "Bremen",
+        "topic": "Medizin",
+        "value": 1
+    },
+    {
+        "state": "Hamburg",
+        "topic": "Medizin",
+        "value": 414
+    },
+    {
+        "state": "Hessen",
+        "topic": "Medizin",
+        "value": 102
+    },
+    {
+        "state": "Mecklenburg-Vorpommern",
+        "topic": "Medizin",
+        "value": 34
+    },
+    {
+        "state": "Niedersachsen",
+        "topic": "Medizin",
+        "value": 485
+    },
+    {
+        "state": "Nordrhein-Westfalen",
+        "topic": "Medizin",
+        "value": 818
+    },
+    {
+        "state": "Rheinland-Pfalz",
+        "topic": "Medizin",
+        "value": 254
+    },
+    {
+        "state": "Sachsen",
+        "topic": "Medizin",
+        "value": 47
+    },
+    {
+        "state": "Sachsen-Anhalt",
+        "topic": "Medizin",
+        "value": 149
+    },
+    {
+        "state": "Schleswig-Holstein",
+        "topic": "Medizin",
+        "value": 72
+    },
+    {
+        "state": "Baden-Wuerttemberg",
+        "topic": "Physik",
+        "value": 255
+    },
+    {
+        "state": "Bayern",
+        "topic": "Physik",
+        "value": 417
+    },
+    {
+        "state": "Berlin",
+        "topic": "Physik",
+        "value": 141
+    },
+    {
+        "state": "Brandenburg",
+        "topic": "Physik",
+        "value": 8
+    },
+    {
+        "state": "Bremen",
+        "topic": "Physik",
+        "value": 6
+    },
+    {
+        "state": "Hamburg",
+        "topic": "Physik",
+        "value": 270
+    },
+    {
+        "state": "Hessen",
+        "topic": "Physik",
+        "value": 62
+    },
+    {
+        "state": "Mecklenburg-Vorpommern",
+        "topic": "Physik",
+        "value": 6
+    },
+    {
+        "state": "Niedersachsen",
+        "topic": "Physik",
+        "value": 165
+    },
+    {
+        "state": "Nordrhein-Westfalen",
+        "topic": "Physik",
+        "value": 441
+    },
+    {
+        "state": "Rheinland-Pfalz",
+        "topic": "Physik",
+        "value": 91
+    },
+    {
+        "state": "Sachsen",
+        "topic": "Physik",
+        "value": 53
+    },
+    {
+        "state": "Sachsen-Anhalt",
+        "topic": "Physik",
+        "value": 68
+    },
+    {
+        "state": "Schleswig-Holstein",
+        "topic": "Physik",
+        "value": 0
+    },
+    {
+        "state": "Baden-Wuerttemberg",
+        "topic": "Sozial- und Verhaltenswissenschaften",
+        "value": 47
+    },
+    {
+        "state": "Bayern",
+        "topic": "Sozial- und Verhaltenswissenschaften",
+        "value": 86
+    },
+    {
+        "state": "Berlin",
+        "topic": "Sozial- und Verhaltenswissenschaften",
+        "value": 62
+    },
+    {
+        "state": "Brandenburg",
+        "topic": "Sozial- und Verhaltenswissenschaften",
+        "value": 6
+    },
+    {
+        "state": "Bremen",
+        "topic": "Sozial- und Verhaltenswissenschaften",
+        "value": 59
+    },
+    {
+        "state": "Hamburg",
+        "topic": "Sozial- und Verhaltenswissenschaften",
+        "value": 39
+    },
+    {
+        "state": "Hessen",
+        "topic": "Sozial- und Verhaltenswissenschaften",
+        "value": 40
+    },
+    {
+        "state": "Mecklenburg-Vorpommern",
+        "topic": "Sozial- und Verhaltenswissenschaften",
+        "value": 1
+    },
+    {
+        "state": "Niedersachsen",
+        "topic": "Sozial- und Verhaltenswissenschaften",
+        "value": 15
+    },
+    {
+        "state": "Nordrhein-Westfalen",
+        "topic": "Sozial- und Verhaltenswissenschaften",
+        "value": 112
+    },
+    {
+        "state": "Rheinland-Pfalz",
+        "topic": "Sozial- und Verhaltenswissenschaften",
+        "value": 4
+    },
+    {
+        "state": "Sachsen",
+        "topic": "Sozial- und Verhaltenswissenschaften",
+        "value": 15
+    },
+    {
+        "state": "Sachsen-Anhalt",
+        "topic": "Sozial- und Verhaltenswissenschaften",
+        "value": 2
+    },
+    {
+        "state": "Schleswig-Holstein",
+        "topic": "Sozial- und Verhaltenswissenschaften",
+        "value": 2
+    },
+    {
+        "state": "Baden-Wuerttemberg",
+        "topic": "Waermetechnik Verfahrenstechnik",
+        "value": 46
+    },
+    {
+        "state": "Bayern",
+        "topic": "Waermetechnik Verfahrenstechnik",
+        "value": 102
+    },
+    {
+        "state": "Berlin",
+        "topic": "Waermetechnik Verfahrenstechnik",
+        "value": 80
+    },
+    {
+        "state": "Brandenburg",
+        "topic": "Waermetechnik Verfahrenstechnik",
+        "value": 1
+    },
+    {
+        "state": "Bremen",
+        "topic": "Waermetechnik Verfahrenstechnik",
+        "value": 21
+    },
+    {
+        "state": "Hamburg",
+        "topic": "Waermetechnik Verfahrenstechnik",
+        "value": 0
+    },
+    {
+        "state": "Hessen",
+        "topic": "Waermetechnik Verfahrenstechnik",
+        "value": 55
+    },
+    {
+        "state": "Mecklenburg-Vorpommern",
+        "topic": "Waermetechnik Verfahrenstechnik",
+        "value": 2
+    },
+    {
+        "state": "Niedersachsen",
+        "topic": "Waermetechnik Verfahrenstechnik",
+        "value": 55
+    },
+    {
+        "state": "Nordrhein-Westfalen",
+        "topic": "Waermetechnik Verfahrenstechnik",
+        "value": 149
+    },
+    {
+        "state": "Rheinland-Pfalz",
+        "topic": "Waermetechnik Verfahrenstechnik",
+        "value": 16
+    },
+    {
+        "state": "Sachsen",
+        "topic": "Waermetechnik Verfahrenstechnik",
+        "value": 35
+    },
+    {
+        "state": "Sachsen-Anhalt",
+        "topic": "Waermetechnik Verfahrenstechnik",
+        "value": 16
+    },
+    {
+        "state": "Schleswig-Holstein",
+        "topic": "Waermetechnik Verfahrenstechnik",
+        "value": 0
+    }
+]

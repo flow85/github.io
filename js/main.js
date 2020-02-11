@@ -1,70 +1,28 @@
 /*
 *    main.js
 *    Mastering Data Visualization with D3.js
-*    Project 3 - CoinStats
+*    10.6 - D3 Brushes
 */
 
-var margin = { left:80, right:100, top:50, bottom:100 },
-    height = 500 - margin.top - margin.bottom, 
-    width = 800 - margin.left - margin.right;
-
-var svg = d3.select("#chart-area")
-    .append("svg")
-    .attr("width", width + margin.left + margin.right)
-    .attr("height", height + margin.top + margin.bottom)
-var g = svg.append("g")
-        .attr("transform", "translate(" + margin.left + 
-            ", " + margin.top + ")");
-
-var t = function(){ return d3.transition().duration(1000); }
-
+// Global variables
+var lineChart,
+    donutChart1,
+    donutChart2,
+    timeline;
+var filteredData = {};
+var donutData = [];
 var parseTime = d3.timeParse("%Y");
 var formatTime = d3.timeFormat("%Y");
-var bisectDate = d3.bisector(function(d) { return d.date; }).left;
-
-// Add the line for the first time
-g.append("path")
-    .attr("class", "line")
-    .attr("fill", "none")
-    .attr("stroke", "grey")
-    .attr("stroke-width", "3px");
-
-// Labels
-var xLabel = g.append("text")
-    .attr("class", "x axisLabel")
-    .attr("y", height + 50)
-    .attr("x", width / 2)
-    .attr("font-size", "20px")
-    .attr("text-anchor", "middle")
-    .text("Year");
-var yLabel = g.append("text")
-    .attr("class", "y axisLabel")
-    .attr("transform", "rotate(-90)")
-    .attr("y", -60)
-    .attr("x", -170)
-    .attr("font-size", "20px")
-    .attr("text-anchor", "middle")
-    .text("#Patents")
-
-// Scales
-var x = d3.scaleTime().range([0, width]);
-var y = d3.scaleLinear().range([height, 0]);
-
-// X-axis
-var xAxisCall = d3.axisBottom()
-    .ticks(4);
-var xAxis = g.append("g")
-    .attr("class", "x axis")
-    .attr("transform", "translate(0," + height +")");
-
-// Y-axis
-var yAxisCall = d3.axisLeft()
-var yAxis = g.append("g")
-    .attr("class", "y axis");
+var color = d3.scaleOrdinal(d3.schemeDark2);
 
 // Event listeners
-$("#coin-select").on("change", update)
-$("#var-select").on("change", update)
+$("#coin-select").on("change", function() {
+    coinChanged();
+})
+$("#var-select").on("change", function() { 
+    lineChart.wrangleData();
+    timeline.wrangleData();
+})
 
 // Add jQuery UI slider
 $("#date-slider").slider({
@@ -74,17 +32,40 @@ $("#date-slider").slider({
     step: 86400000, // One day
     values: [parseTime("2000").getTime(), parseTime("2018").getTime()],
     slide: function(event, ui){
-        $("#dateLabel1").text(formatTime(new Date(ui.values[0])));
-        $("#dateLabel2").text(formatTime(new Date(ui.values[1])));
-        update();
+        dates = ui.values.map(function(val) { return new Date(val); })
+        xVals = dates.map(function(date) { return timeline.x(date); })
+
+        timeline.brushComponent
+            .call(timeline.brush.move, xVals)
     }
 });
 
-d3.json("data/patentdata_strings.json").then(function(data){
-    // console.log(data);
+function arcClicked(arc){
+    $("#coin-select").val(arc.data.coin);
+    coinChanged();
+}
 
+function coinChanged(){
+    donutChart1.wrangleData();
+    donutChart2.wrangleData();
+    lineChart.wrangleData();
+    timeline.wrangleData();
+}
+
+function brushed() {
+    var selection = d3.event.selection || timeline.x.range();
+    var newValues = selection.map(timeline.x.invert)
+
+    $("#date-slider")
+        .slider('values', 0, newValues[0])
+        .slider('values', 1, newValues[1]);
+    $("#dateLabel1").text(formatTime(newValues[0]));
+    $("#dateLabel2").text(formatTime(newValues[1]));
+    lineChart.wrangleData();
+}
+
+d3.json("data/patentdata_strings.json").then(function(data){
     // Prepare and clean data
-    filteredData = {};
     for (var coin in data) {
         if (!data.hasOwnProperty(coin)) {
             continue;
@@ -94,104 +75,21 @@ d3.json("data/patentdata_strings.json").then(function(data){
         })
         filteredData[coin].forEach(function(d){
             d["patents"] = +d["patents"];
-            //d["24h_vol"] = +d["24h_vol"];
-            //d["market_cap"] = +d["market_cap"];
+            d["24h_vol"] = +d["24h_vol"];
+            d["market_cap"] = +d["market_cap"];
             d["date"] = parseTime(d["date"])
         });
+        donutData.push({
+            "coin": coin,
+            "data": filteredData[coin].slice(-1)[0]
+        })
     }
 
-    // Run the visualization for the first time
-    update();
+    lineChart = new LineChart("#line-area");
+
+    donutChart1 = new DonutChart("#donut-area1", "24h_vol");
+    donutChart2 = new DonutChart("#donut-area2", "market_cap");
+
+    timeline = new Timeline("#timeline-area");
+
 })
-
-function update() {
-    // Filter data based on selections
-    var coin = $("#coin-select").val(),
-        yValue = $("#var-select").val(),
-        sliderValues = $("#date-slider").slider("values");
-    var dataTimeFiltered = filteredData[coin].filter(function(d){
-        return ((d.date >= sliderValues[0]) && (d.date <= sliderValues[1]))
-    });
-
-    // Update scales
-    x.domain(d3.extent(dataTimeFiltered, function(d){ return d.date; }));
-    y.domain([d3.min(dataTimeFiltered, function(d){ return d[yValue]; }) / 1.005, 
-        d3.max(dataTimeFiltered, function(d){ return d[yValue]; }) * 1.005]);
-
-    // Fix for format values
-    var formatSi = d3.format(".2s");
-    function formatAbbreviation(x) {
-      var s = formatSi(x);
-      switch (s[s.length - 1]) {
-        case "G": return s.slice(0, -1) + "B";
-        case "k": return s.slice(0, -1) + "K";
-      }
-      return s;
-    }
-
-    // Update axes
-    xAxisCall.scale(x);
-    xAxis.transition(t()).call(xAxisCall);
-    yAxisCall.scale(y);
-    yAxis.transition(t()).call(yAxisCall.tickFormat(formatAbbreviation));
-
-    // Clear old tooltips
-    d3.select(".focus").remove();
-    d3.select(".overlay").remove();
-
-    // Tooltip code
-    var focus = g.append("g")
-        .attr("class", "focus")
-        .style("display", "none");
-    focus.append("line")
-        .attr("class", "x-hover-line hover-line")
-        .attr("y1", 0)
-        .attr("y2", height);
-    focus.append("line")
-        .attr("class", "y-hover-line hover-line")
-        .attr("x1", 0)
-        .attr("x2", width);
-    focus.append("circle")
-        .attr("r", 5);
-    focus.append("text")
-        .attr("x", 15)
-        .attr("dy", ".31em");
-    svg.append("rect")
-        .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
-        .attr("class", "overlay")
-        .attr("width", width)
-        .attr("height", height)
-        .on("mouseover", function() { focus.style("display", null); })
-        .on("mouseout", function() { focus.style("display", "none"); })
-        .on("mousemove", mousemove);
-        
-    function mousemove() {
-        var x0 = x.invert(d3.mouse(this)[0]),
-            i = bisectDate(dataTimeFiltered, x0, 1),
-            d0 = dataTimeFiltered[i - 1],
-            d1 = dataTimeFiltered[i],
-            d = (d1 && d0) ? (x0 - d0.date > d1.date - x0 ? d1 : d0) : 0;
-        focus.attr("transform", "translate(" + x(d.date) + "," + y(d[yValue]) + ")");
-        focus.select("text").text(function() { return d3.format("$,")(d[yValue].toFixed(2)); });
-        focus.select(".x-hover-line").attr("y2", height - y(d[yValue]));
-        focus.select(".y-hover-line").attr("x2", -x(d.date));
-    }
-
-    // Path generator
-    line = d3.line()
-        .x(function(d){ return x(d.date); })
-        .y(function(d){ return y(d[yValue]); });
-
-    // Update our line path
-    g.select(".line")
-        .transition(t)
-        .attr("d", line(dataTimeFiltered));
-
-    // Update y-axis label
-    var newText = (yValue == "patents") ? "#Patents" :
-        ((yValue == "market_cap") ?  "Market Capitalization (USD)" : "24 Hour Trading Volume (USD)")
-    yLabel.text(newText);
-}
-
-
-
