@@ -1,25 +1,26 @@
 <!doctype html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="description" content="">
-        <title>Projectstarts and Patents</title>
-        <!-- Bootstrap Core CSS -->
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <!-- jQuery UI CSS -->
-        <link rel="stylesheet" href="css/jquery-ui.min.css">
-        <link rel="stylesheet" href="css/jquery-ui.structure.min.css">
-        <link rel="stylesheet" href="css/jquery-ui.theme.min.css">
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="css/style.css">
-    </head>
 
-    <body>
-        <nav class="navbar navbar-default">
-            <div class="container">
-                <a class="navbar-brand" href="#"><img id="logo" src="img/2000px-Fub-logo.png"></a>      
-            </div>
-        </nav>
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <title>Projectstarts and Patents</title>
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- jQuery UI CSS -->
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.structure.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.theme.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img id="logo" src="img/2000px-Fub-logo.png"></a>
+        </div>
+    </nav>
 
     <!-- Bootstrap grid setup -->
     <div class="container">
@@ -34,28 +35,28 @@
                     </div>
                     <div class="col-md-4">
                         <select id="coin-select" class="form-control">
-							<option selected value="Baden-Wuerttemberg">Baden-Wuerttemberg</option>
-							<option value="Bayern">Bayern</option>
-							<option value="Berlin">Berlin</option>
-							<option value="Brandenburg">Brandenburg</option>
-							<option value="Bremen">Bremen</option>
-							<option value="Hamburg">Hamburg</option>
-							<option value="Hessen">Hessen</option>
-							<option value="Mecklenburg-Vorpommern">Mecklenburg-Vorpommern</option>
-							<option value="Niedersachsen">Niedersachsen</option>
-							<option value="Nordrhein-Westfalen">Nordrhein-Westfalen</option>
-							<option value="Rheinland-Pfalz">Rheinland-Pfalz</option>
-							<option value="Saarland">Saarland</option>
-							<option value="Sachsen">Sachsen</option>
-							<option value="Sachsen-Anhalt">Sachsen-Anhalt</option>
-							<option value="Schleswig-Holstein">Schleswig-Holstein</option>
-							<option value="Thueringen">Thueringen</option>
+                            <option selected value="Baden-Wuerttemberg">Baden-Wuerttemberg</option>
+                            <option value="Bayern">Bayern</option>
+                            <option value="Berlin">Berlin</option>
+                            <option value="Brandenburg">Brandenburg</option>
+                            <option value="Bremen">Bremen</option>
+                            <option value="Hamburg">Hamburg</option>
+                            <option value="Hessen">Hessen</option>
+                            <option value="Mecklenburg-Vorpommern">Mecklenburg-Vorpommern</option>
+                            <option value="Niedersachsen">Niedersachsen</option>
+                            <option value="Nordrhein-Westfalen">Nordrhein-Westfalen</option>
+                            <option value="Rheinland-Pfalz">Rheinland-Pfalz</option>
+                            <option value="Saarland">Saarland</option>
+                            <option value="Sachsen">Sachsen</option>
+                            <option value="Sachsen-Anhalt">Sachsen-Anhalt</option>
+                            <option value="Schleswig-Holstein">Schleswig-Holstein</option>
+                            <option value="Thueringen">Thueringen</option>
                         </select>
                     </div>
                     <div class="col-md-4">
                         <select id="var-select" class="form-control">
-							<option selected value="projectstarts">#Projectstarts</option>
-							<option value="patents">#Patents</option>
+                            <option selected value="projectstarts">#Projectstarts</option>
+                            <option value="patents">#Patents</option>
                         </select>
                     </div>
                 </div>
@@ -63,7 +64,7 @@
                     <div class="col-md-8">
                         <div id="line-area"></div>
                         <div id="timeline-area"></div>
-                    </div> 
+                    </div>
                     <div class="col-md-4">
                         <div id="donut-area1"></div>
                         <div id="donut-area2"></div>
@@ -71,27 +72,81 @@
                 </div>
             </div>
         </div>
+        <div class="row" id="legend">
+            <div class="legendwrap">
+                <div class='box tiermedizin'></div>
+                Tiermedizin
+            </div>
+            <div class="legendwrap">
+                <div class='box architektur'></div>
+                Architektur
+            </div>
+            <div class="legendwrap">
+                <div class='box biologie'></div>
+                Biologie
+            </div>
+            <div class="legendwrap">
+                <div class='box chemie'></div>
+                Chemie
+            </div>
+            <div class="legendwrap"> 
+                <div class='box geisteswissenschaften'></div>
+                Geisteswiss.
+            </div>
+            <div class="legendwrap">
+                <div class='box geowissenschaften'></div>
+                Geowiss.
+            </div>
+            <div class="legendwrap">
+                <div class='box informatik'></div>
+                Informatik
+            </div>
+            <div class="legendwrap">
+                <div class='box maschinenbau'></div>
+                Maschinenbau
+            </div>
+            <div class="legendwrap">
+                <div class='box materialwissenschaft'></div>
+                Materialwiss.
+            </div>
+            <div class="legendwrap">
+                <div class='box mathematik'></div>
+                Mathematik
+            </div>
+            <div class="legendwrap">
+                <div class='box medizin'></div>
+                Medizin
+            </div>
+            <div class="legendwrap">
+                <div class='box physik'></div>
+                Physik
+            </div>
+            <div class="legendwrap">
+                <div class='box sozialwissenschaften'></div>
+                Sozialwiss.
+            </div>
+            <div class="legendwrap">
+                <div class='box waermetechnik'></div>
+                Waermetechnik
+            </div>
+        </div>
+        <div class="row" id="topics">
+
+        </div>
     </div>
 
     <!-- External JS libraries -->
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
-    <script src="js/d3.min.js"></script>
+    <script src="js/d3.js"></script>
     <!-- Custom JS -->
     <script src="js/lineChart.js"></script>
     <script src="js/donutChart.js"></script>
     <script src="js/timeline.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/topics.js"></script>
 
-    </body>
+</body>
+
 </html>
-
-
-
-
-
-
-
-
-
