@@ -135,7 +135,7 @@ $("#coin-select").on("change", function() {
         return
     }
     if (!topicsJson) {
-        $.getJSON("../data/topics_per_state.json", data => {
+        $.getJSON("data/topics_per_state.json", data => {
             topicsJson = data
         }) 
     }
@@ -143,7 +143,7 @@ $("#coin-select").on("change", function() {
 })
 
 $(document).ready(function() {
-    $.getJSON("../data/topics_per_state.json", data => {
+    $.getJSON("data/topics_per_state.json", data => {
         topicsJson = data
         updateTopics($("#coin-select").val())
     });
